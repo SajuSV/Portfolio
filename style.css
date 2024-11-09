@@ -1,0 +1,336 @@
+/* -------------------------------------Animation-------------------------------------  */
+
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.animation{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+
+/* From Uiverse.io by kennyotsu */ 
+
+.loader {
+    font-size: 25px;
+    height: 55px;
+    padding: 10px 0px;
+    display: flex;
+}
+.words {
+    overflow: hidden;
+    position: relative;
+}
+.word {
+    display: block;
+    animation: spin 10s infinite;
+}
+  
+  @keyframes spin {
+    
+    10% {
+        transform: translateY(0%);
+    }
+  
+    25% {
+      transform: translateY(-100%);
+    }
+  
+    35% {
+      transform: translateY(-202%);
+    }
+  
+    50% {
+      transform: translateY(-200%);
+    }
+  
+    60% {
+      transform: translateY(-302%);
+    }
+  
+    75% {
+      transform: translateY(-300%);
+    }
+  
+    85% {
+      transform: translateY(-402%);
+    }
+  
+    100% {
+      transform: translateY(-400%);
+    }
+  }
+  
+
+
+
+/* -------------------------------------Overall-------------------------------------  */
+        
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-size: 15px;
+            line-height: 30px;
+            
+        }
+        p{
+            margin: 0px;
+        }
+        h1{
+            font-size: 60px !important;
+            font-family: Tahoma !important;
+        }
+        h2{
+            font-size: 45px !important;
+            font-family: Tahoma !important;
+        }
+        h6{
+            font-size: 25px !important;
+        }
+        @media only screen and (max-width: 992px){
+            h2{
+                font-size: 30px !important;
+            }
+        }
+
+/* -------------------------------------Nav Responsive-------------------------------------  */
+        .select{
+            display: none;
+        }
+        @media only screen and (max-width: 992px){
+            .mobile{
+                display: none;
+            }
+            .select{
+                display: block;
+                color: white;
+                
+            }
+        }
+
+/* -------------------------------------Navigation-------------------------------------  */
+
+        header .navigation{
+            box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.196);
+        }
+        header .navigation, .pagecontent{
+            padding-top: 20px;
+            font-weight: bold;
+          
+        }
+        header .navigation .row{
+            background-color: rgb(247, 247, 247);
+            padding: 10px 0px;
+            line-height: 30px;
+            border-radius: 30px;
+        }
+        /* header .navigation .row a{ 
+            padding-right: 40px;
+        } */
+
+        .listtab li{
+            line-height:10px;
+            text-align: center;
+        }
+        .listtab hr{
+            color: rgba(0, 0, 0, 0.093);
+        }
+
+
+/* -------------------------------------Profile-------------------------------------  */
+        .profile p{
+            text-align: justify;
+        }
+
+        /* all button style */
+
+        button{
+            border: none;
+            background-color: rgb(0, 204, 255);
+            border-radius: 20px !important;
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+
+        .aboutbutton{
+            border: 1px gray solid;
+            width:100%; 
+            height: 100%; 
+            border-radius: 30px;
+            line-height: 30px;
+            font-weight: bold;
+        }
+        .cvbutton{
+            border: none;
+            width:100%; 
+            height: 100%; 
+            background-color: rgb(0, 204, 255);
+            border-radius: 30px;
+            line-height: 30px;
+            font-weight: bold;
+        }
+        
+
+
+/* -------------------------------------Proficiency-------------------------------------  */
+
+        .prof .row .pro{
+            background-color: rgb(247, 247, 247);
+            /* margin: 10px; */
+            border: 10px solid white;
+            padding: 30px;
+            /* width: 30%; */
+            border-radius: 20px;
+            text-align: center;
+        }
+        
+        .about{
+            background-color: rgb(247, 247, 247);
+        }
+        .about .title{
+            text-align: end;
+        }
+        .about .content{
+            /* text-align: justify; */
+            /* font-size: 15px; */
+            line-height: 30px;
+        }
+        @media only screen and (max-width: 768px){
+            .about .content{
+                text-align: justify;
+            }
+        }
+
+
+
+/* -------------------------------------Skills-------------------------------------  */
+        .skills .row .skill{
+            background-color: rgb(247, 247, 247);
+            /* margin: 10px; */
+            border: 10px solid white;
+            padding: 35px;
+            /* width: 30%; */
+            border-radius: 20px;
+        }
+
+
+/* -------------------------------------Project-------------------------------------  */
+        .portfolio{
+            background-color: rgb(247, 247, 247);
+
+        }
+        .portfolio .project p{
+            line-height: 30px;
+            text-align: justify;
+        }
+     
+        .scope .project p{
+            line-height: 30px;
+            text-align: justify;
+        }
+        .cardimg{
+            height:100%;
+            width:100%;
+            border: 1px solid white;
+            
+            transition: all 0.5s;
+        }
+
+        .cardimg:hover {
+            border: 1px solid black;
+            transform: scale(1.05);
+            box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+        }
+
+
+
+
+/* -------------------------------------Team Project-------------------------------------  */
+        .team{
+            background-color: rgb(247, 247, 247);
+        }
+        .contact{
+            background-image: url(contact.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .team .work{
+            background-color: white;
+            padding: 20px;
+            border: 10px solid  rgb(247, 247, 247);
+            border-radius: 20px;
+            text-align: justify;
+        }
+
+
+
+
+
+/* -------------------------------------Contact-------------------------------------  */
+
+        .form {
+            background-color: white;
+            width: 60%;
+            height: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+        }
+        @media only screen and (max-width: 992px){
+        .form {
+            width: 90%;
+        }
+        }
+        .form input {
+            border: 1px solid rgb(219, 213, 213);
+            padding: 8px 14px;
+            border-radius: 8px;
+            width: 100%;
+            height: 50px;
+            /* margin: 10px 0px; */
+        }
+
+        .form textarea {
+            border-radius: 8px;
+            height: 100px;
+            width: 100%;
+            resize: none;
+            padding: 8px 14px;
+            border: 1px solid rgb(219, 213, 213);
+        }
+
+
+/* -------------------------------------Footer-------------------------------------  */
+
+        footer{
+            background-color:rgb(247, 247, 247) ;
+        }
+        footer .container{
+            text-align: center;
+        }
+        footer .container p{
+            border-radius: 10px;
+            padding: 10px 0px;
+            background-color: white;
+        }
+
+
+
+
+
+        
+
+        
