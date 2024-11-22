@@ -25,18 +25,28 @@
 </head>
 <body>
 
+    <script>
+
+        $(window).ready(function() {
+            $(".load").hide();
+        });
+        $(window).load(function() {
+            $(".body").hide();
+            $(".load").show();
+        });
+
+    </script>
+<div class="load">
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="loader "></div>
+    </div>
+</div>
 
 <!-- ----------------------------------------------Nav Style----------------------------------------------  -->
-<script>
-    $(document).ready(function(){
-        $(".click").click(function(){
-            $("header").toggle();
-        })
-    })
-</script>
 
 
 
+<div class="body">
 <div id="top"></div>
 
 <!-- ----------------------------------------------Nav Bar----------------------------------------------  -->
@@ -99,7 +109,7 @@
                     <h6 class="pt-5">Hello It's Me</h6>
                     <h1>SAJU S V</h1>
                     
-                    <div class="loader">
+                    <div class="spin">
                         <p>I'm a &nbsp;</p>
                         <div class="words">
                             <b>
@@ -348,6 +358,6 @@
     <div><a href="#top" class="text-black h4"><i class="fa-solid fa-circle-arrow-up"></i></a></div>
 </div>
     
-    
+</div>  
 </body>
 </html>
